@@ -123,7 +123,7 @@ export const masterData: MasterData = {
     'Rahul Tewatia',
     'Deepak Chahar',
     'Devdutt Padikkal',
-    'Narayan Jagadeesan',
+    'Jagadeesan Narayan',
     'Jason Behrendorff',
     'Jofra Archer',
     'Shivam Dube',
