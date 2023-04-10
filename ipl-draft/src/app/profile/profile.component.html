@@ -1,0 +1,41 @@
+<div class="m-2">
+    
+<div class="row">
+    <div class="col-md-12">
+      <div class="card mb-4 box-shadow">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-normal">{{profileName}} points</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">{{profilePoints}}</h1>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col-md-12">
+      <div class="card mb-4 box-shadow">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-normal">Players List</h4>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-6 col-lg-4" *ngFor="let player of players; let i = index">
+              <div class="card mb-4 box-shadow">
+                <div class="card-header">
+                  <h4 class="my-0 font-weight-normal">{{player?.name}}</h4>
+                </div>
+                <div class="card-body">
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>Runs Scored: {{player?.runsScored}}</li>
+                    <li>Wickets Taken: {{player?.wicketsTaken}}</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>

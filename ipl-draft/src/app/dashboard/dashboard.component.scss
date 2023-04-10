@@ -1,0 +1,50 @@
+.dashboard-card {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 20px;
+  }
+
+  .dashboard-member-card:hover {
+    background-color: rgb(168, 238, 185);
+  }
+  
+  .dashboard-card-header {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px 5px 0px 0px;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 10px;
+  }
+  
+  .dashboard-member-card {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f7f7f7;
+    padding: 20px;
+    height: 100%;
+  }
+  
+  .dashboard-member-card-header {
+    background-color: #f7f7f7;
+    border-radius: 5px 5px 0px 0px;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+  }
+  
+  .dashboard-member-name {
+    font-size: 32px;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .dashboard-member-score {
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+  }
+  
