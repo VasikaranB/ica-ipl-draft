@@ -97,7 +97,7 @@ export const masterData: MasterData = {
     'Jitesh Sharma',
     'Kyle Mayers',
     'Raj Angad Bawa',
-    'Sai Sudarshan',
+    'Sai Sudharsan',
   ],
   Anand: [
     'MS Dhoni',
