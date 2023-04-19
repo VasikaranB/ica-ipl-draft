@@ -19,7 +19,7 @@ export const masterData: MasterData = {
   Yeshwant: [
     'Ishan Kishan',
     'Varun Chakaravarthy',
-    'Virat Kholi',
+    'Virat Kohli',
     'Devon Conway',
     'Anrich Nortje',
     'Chetan Sakariya',
