@@ -28,11 +28,9 @@
                   <div class="d-flex justify-content-center">
                     <img class="playerImage"  src={{playerImage(player?.name)}} alt="Player Image"/>
                   </div>
-                  <div class="d-flex justify-content-center">
-                  <ul class="list-unstyled mt-3 mb-4">
-                    <li><b>Runs Scored: </b>{{player?.runsScored}}</li>
-                    <li><b>Wickets Taken: </b>{{player?.wicketsTaken}}</li>
-                  </ul>
+                  <div class="d-flex justify-content-center pt-3">
+                    <div class="px-5"><div><img class="batImage " src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/77456/cricket-bat-clipart-md.png"/> </div>{{player?.runsScored}}</div>
+                    <div class="px-5"><div><img class="batImage "src="https://png.pngtree.com/png-clipart/20190705/original/pngtree-white-cricket-ball-png-3d-vector-image-png-image_4354764.jpg"/> </div>{{player?.wicketsTaken}}</div>
                   </div>
                 </div>
               </div>
