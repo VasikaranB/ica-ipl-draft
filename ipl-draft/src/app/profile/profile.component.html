@@ -1,17 +1,16 @@
 <div class="m-2">
-    
-<div class="row">
+  <div class="row">
     <div class="col-md-12">
       <div class="card mb-4 box-shadow">
         <div class="card-header">
-          <h4 class="my-0 font-weight-normal">{{profileName}} points</h4>
+          <h4 class="my-0 font-weight-normal">{{ profileName }} points</h4>
         </div>
         <div class="card-body">
-          <h1 class="card-title pricing-card-title">{{profilePoints}}</h1>
+          <h1 class="card-title pricing-card-title">{{ profilePoints }}</h1>
         </div>
       </div>
     </div>
-  
+
     <div class="col-md-12">
       <div class="card mb-4 box-shadow">
         <div class="card-header">
@@ -19,18 +18,41 @@
         </div>
         <div class="card-body">
           <div class="row">
-            <div class="col-md-6 col-lg-4" *ngFor="let player of players; let i = index">
+            <div
+              class="col-md-6 col-lg-4"
+              *ngFor="let player of players; let i = index"
+            >
               <div class="card mb-4 box-shadow">
                 <div class="card-header">
-                  <h4 class="my-0 font-weight-normal">{{player?.name}}</h4>
+                  <h4 class="my-0 font-weight-normal">{{ player?.name }}</h4>
                 </div>
                 <div class="card-body">
                   <div class="d-flex justify-content-center">
-                    <img class="playerImage"  src={{playerImage(player?.name)}} alt="Player Image"/>
+                    <img
+                      class="playerImage"
+                      src="{{ playerImage(player?.name) }}"
+                      alt="Player Image"
+                    />
                   </div>
                   <div class="d-flex justify-content-center pt-3">
-                    <div class="px-5"><div><img class="batImage " src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/77456/cricket-bat-clipart-md.png"/> </div>{{player?.runsScored}}</div>
-                    <div class="px-5"><div><img class="batImage "src="https://png.pngtree.com/png-clipart/20190705/original/pngtree-white-cricket-ball-png-3d-vector-image-png-image_4354764.jpg"/> </div>{{player?.wicketsTaken}}</div>
+                    <div class="px-5">
+                      <div>
+                        <img
+                          class="batImage"
+                          src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/77456/cricket-bat-clipart-md.png"
+                        />
+                      </div>
+                      <b>{{ player?.runsScored }}</b>
+                    </div>
+                    <div class="px-5">
+                      <div>
+                        <img
+                          class="batImage"
+                          src="https://png.pngtree.com/png-clipart/20190705/original/pngtree-white-cricket-ball-png-3d-vector-image-png-image_4354764.jpg"
+                        />
+                      </div>
+                      <b>{{ player?.wicketsTaken }}</b>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -40,5 +62,4 @@
       </div>
     </div>
   </div>
-  
 </div>
