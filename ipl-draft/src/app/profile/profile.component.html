@@ -25,10 +25,15 @@
                   <h4 class="my-0 font-weight-normal">{{player?.name}}</h4>
                 </div>
                 <div class="card-body">
+                  <div class="d-flex justify-content-center">
+                    <img class="playerImage"  src={{playerImage(player?.name)}} alt="Player Image"/>
+                  </div>
+                  <div class="d-flex justify-content-center">
                   <ul class="list-unstyled mt-3 mb-4">
-                    <li>Runs Scored: {{player?.runsScored}}</li>
-                    <li>Wickets Taken: {{player?.wicketsTaken}}</li>
+                    <li><b>Runs Scored: </b>{{player?.runsScored}}</li>
+                    <li><b>Wickets Taken: </b>{{player?.wicketsTaken}}</li>
                   </ul>
+                  </div>
                 </div>
               </div>
             </div>

@@ -47,4 +47,8 @@ export class ProfileComponent implements OnInit {
       player.wicketsTaken = bowlStat?.Wickets ? bowlStat?.Wickets :0
     })
   }
+
+  playerImage(name: string) {
+    return `https://scores.iplt20.com/ipl/playerimages/${name}.png`
+  }
 }
