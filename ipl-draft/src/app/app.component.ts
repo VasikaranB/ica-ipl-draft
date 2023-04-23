@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { LoaderService } from './loader.service';
+import { Router, NavigationEnd } from '@angular/router';
+import { filter } from 'rxjs/operators';
 
 @Component({
   selector: 'app-root',
@@ -11,9 +13,17 @@ export class AppComponent {
 
   isLoading: boolean = false;
 
-  constructor(private loaderService: LoaderService) {
+  constructor(private loaderService: LoaderService,private router: Router) {
     this.loaderService.isLoading.subscribe((v) => {
       this.isLoading = v;
     });
+  }
+
+  ngOnInit() {
+    this.router.events
+      .pipe(filter(event => event instanceof NavigationEnd))
+      .subscribe(() => {
+        window.scrollTo(0, 0);
+      });
   }
 }
