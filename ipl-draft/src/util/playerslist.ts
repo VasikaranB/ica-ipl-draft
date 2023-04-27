@@ -146,6 +146,7 @@ export const masterData: MasterData = {
     'Krunal Pandya',
     'Adil Rashid',
     'Rovman Powell',
+    'Ajinkya Rahane',
   ],
 };
 
