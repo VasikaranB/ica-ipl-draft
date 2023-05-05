@@ -15,6 +15,7 @@ export const masterData: MasterData = {
     'Kuldeep Sen',
     'Arshad Khan',
     'Rahmanullah Gurbaz',
+    'Tushar Deshpande',
   ],
   Yeshwant: [
     'Ishan Kishan',
