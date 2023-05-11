@@ -26,7 +26,7 @@ export const masterData: MasterData = {
     'Chetan Sakariya',
     'Matthew Wade',
     'Rajat Patidar',
-    'Maheesh Theekshana',
+    'Maheesh Thekshana',
     'Andre Russell',
     'Venkatesh Iyer',
     'Harpreet Brar',
@@ -49,6 +49,7 @@ export const masterData: MasterData = {
     'Anuj Rawat',
     'Jaydev Unadkat',
     'Murugan Ashwin',
+    'Chris Jordan',
   ],
   Roshan: [
     'Dinesh Karthik',
