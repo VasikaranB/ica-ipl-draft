@@ -49,7 +49,6 @@ export const masterData: MasterData = {
     'Anuj Rawat',
     'Jaydev Unadkat',
     'Murugan Ashwin',
-    'Chris Jordan',
   ],
   Roshan: [
     'Dinesh Karthik',
@@ -132,6 +131,7 @@ export const masterData: MasterData = {
     'Axar Patel',
     'Mayank Markande',
     'Shahbaz Ahmed',
+    'Chris Jordan',
   ],
   Vasikaran: [
     'Heinrich Klaasen',
