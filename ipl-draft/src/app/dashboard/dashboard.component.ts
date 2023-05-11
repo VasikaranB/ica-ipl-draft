@@ -97,7 +97,7 @@ export class DashboardComponent implements OnInit {
             : 0;
       });
       mem.score = points;
-      if(mem.name === 'Yeshwant') mem.score = mem.score-75;
+      if(mem.name === 'Yeshwant') mem.score = mem.score-475;
     });
     this.members.sort((a, b) => b.score - a.score);
     this.statService.setPoints(this.members);
