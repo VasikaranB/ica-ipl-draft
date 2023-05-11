@@ -26,7 +26,7 @@ export const masterData: MasterData = {
     'Chetan Sakariya',
     'Matthew Wade',
     'Rajat Patidar',
-    'Maheesh Thekshana',
+    'Maheesh Theekshana',
     'Andre Russell',
     'Venkatesh Iyer',
     'Harpreet Brar',
