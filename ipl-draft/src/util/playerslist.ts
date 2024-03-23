@@ -171,6 +171,7 @@ export const masterData2023: MasterData = {
     'Kuldeep Sen',
     'Arshad Khan',
     'Rahmanullah Gurbaz',
+    'Tushar Deshpande',
   ],
   Yeshwant: [
     'Ishan Kishan',
@@ -286,6 +287,7 @@ export const masterData2023: MasterData = {
     'Axar Patel',
     'Mayank Markande',
     'Shahbaz Ahmed',
+    'Chris Jordan',
   ],
   Vasikaran: [
     'Heinrich Klaasen',
@@ -302,6 +304,7 @@ export const masterData2023: MasterData = {
     'Krunal Pandya',
     'Adil Rashid',
     'Rovman Powell',
+    'Ajinkya Rahane',
   ],
 };
 
