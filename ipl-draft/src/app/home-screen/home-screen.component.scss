@@ -1,0 +1,58 @@
+.home-container {
+    
+  }
+  
+  .top-half {
+    width: 100%;
+  }
+  
+  .home-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .bottom-half {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  .bottom-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
+  .year-options {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 20px;
+  }
+  
+  .year-option {
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  .year-image {
+    width: 250px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .year-option:hover .year-image {
+    transform: scale(1.3);
+  }
+  
+  .year-text {
+    display: block;
+    margin-top: 5px;
+    text-align: center;
+    font-weight: 600;
+  }
+  

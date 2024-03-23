@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { masterData } from '../../util/playerslist';
+import { masterData2023, masterData2024 } from '../../util/playerslist';
 import { StatsService } from '../stats.service';
 import { ActivatedRoute, Router } from '@angular/router';
 
@@ -14,9 +14,12 @@ export class ProfileComponent implements OnInit {
     private statService: StatsService,
     private router: Router
   ) {}
-  names = Object.keys(masterData);
+  year = this.route.snapshot.paramMap.get('year') || '2024';
+  masterData = this.year =='2023' ? masterData2023: masterData2024;
+  names = Object.keys(this.masterData);
   playerList: string[] = [];
-  profilePoints = 0;
+  profilePoints = 0
+  profile15Points = 0;
   players :any[] =[];
   profileName ='';
 
@@ -26,20 +29,21 @@ export class ProfileComponent implements OnInit {
       this.router.navigate(['/']);
       id = 'test';
     }
-    this.playerList = masterData[id];
+    this.playerList = this.masterData[id];
     let members: any[] = this.statService.getPoints();
     if (!members) {
       this.router.navigate(['/']);
     }
     let member = members.find((mem: any) => id === mem.name)
-    this.profilePoints = member.score
+    this.profilePoints = member.allScore
     this.profileName =  member.name
-    masterData[this.profileName].forEach(player => {
+    this.profile15Points = member.score
+    this.masterData[this.profileName].forEach(player => {
       this.players.push({name : player , runsScored: 0, wicketsTaken: 0})
     })
     let battingStats = this.statService.getBatsman()
     let bowlingStats = this.statService.getBowler()
-    console.log(battingStats,bowlingStats)
+    // console.log(battingStats,bowlingStats)
     this.players.forEach(player =>{     
       let batStat = battingStats.find((bat: any) => bat.StrikerName == player.name)
       player.runsScored = batStat?.TotalRuns ? batStat?.TotalRuns : 0

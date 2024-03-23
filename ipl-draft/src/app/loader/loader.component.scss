@@ -9,6 +9,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    color: #4B0082;
+  }
+
+  .loadtext {
+    background-color: white;
+    padding: 2px;
   }
   
   .spinner {

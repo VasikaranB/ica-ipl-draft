@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { masterData } from '../../util/playerslist';
+import { masterData2023, masterData2024 } from '../../util/playerslist';
 import { StatsService } from '../stats.service';
 import { LoaderService } from '../loader.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-dashboard',
@@ -13,42 +14,46 @@ export class DashboardComponent implements OnInit {
   constructor(
     private http: HttpClient,
     private statService: StatsService,
-    private loaderService: LoaderService
+    private loaderService: LoaderService,
+    private route: ActivatedRoute,
   ) {}
 
   battersData: any;
   bowlersData: any;
   members: members[] = [];
+  year: string = this.route.snapshot.paramMap.get('year') || '2024';;
+  masterData = this.year =='2023' ? masterData2023: masterData2024;
 
   ngOnInit() {
-    let names = Object.keys(masterData);
+    const yearID = this.getId(this.year)
+    let names = Object.keys(this.masterData);
     names.forEach((value: string) => {
-      this.members.push({ name: value, score: 0 });
+      this.members.push({ name: value, score: 0 , allScore : 0});
     });
     this.loaderService.isLoading.next(true);
     this.http
       .get(
-        'https://proxy-server-jum4.onrender.com/api/ipl/feeds/stats/107-mostwickets.js',
+        `https://proxy-server-jum4.onrender.com/api/ipl/feeds/stats/${yearID}-mostwickets.js`,
         { responseType: 'text' }
       )
       .subscribe((data) => {
         this.bowlersData = this.parseJS(data)?.mostwickets;
         this.bowlersData = this.filterBowlerData(this.bowlersData);
         this.statService.setBowler(this.bowlersData);
-        console.log(this.bowlersData);
+        // console.log(this.bowlersData);
         this.loaderService.isLoading.next(false);
       });
     this.loaderService.isLoading.next(true);
     this.http
       .get(
-        'https://proxy-server-jum4.onrender.com/api/ipl/feeds/stats/107-toprunsscorers.js',
+        `https://proxy-server-jum4.onrender.com/api/ipl/feeds/stats/${yearID}-toprunsscorers.js`,
         { responseType: 'text' }
       )
       .subscribe((data) => {
         this.battersData = this.parseJS(data)?.toprunsscorers;
         this.battersData = this.filterBatterData(this.battersData);
         this.statService.setBatsman(this.battersData);
-        console.log(this.battersData);
+        // console.log(this.battersData);
         this.loaderService.isLoading.next(false);
       });
     const interval = setInterval(() => {
@@ -65,6 +70,17 @@ export class DashboardComponent implements OnInit {
     return data;
   }
 
+  getId(year: string ) {
+    switch(year) {
+      case '2023':
+        return 107;
+      case '2024':
+        return 148;
+      default:
+        return 148;
+    }
+  }
+
   filterBowlerData(data: any[]) {
     return data.map((bowler: any) => {
       return { BowlerName: bowler?.BowlerName, Wickets: bowler?.Wickets };
@@ -79,8 +95,9 @@ export class DashboardComponent implements OnInit {
 
   calculateScores() {
     this.members.forEach((mem: members) => {
-      let players = masterData[mem.name];
+      let players = this.masterData[mem.name];
       let points = 0;
+      let pointsList: number[] = [];
       players.forEach((player) => {
         let battingStats = this.battersData.find(
           (bat: any) => bat?.StrikerName === player
@@ -88,23 +105,32 @@ export class DashboardComponent implements OnInit {
         let bowlingStats = this.bowlersData.find(
           (ball: any) => ball?.BowlerName === player
         );
-        points += parseInt(battingStats?.TotalRuns)
+        let batPoints = parseInt(battingStats?.TotalRuns)
           ? parseInt(battingStats?.TotalRuns)
           : 0;
-        points +=
-          parseInt(bowlingStats?.Wickets) * 20
-            ? parseInt(bowlingStats?.Wickets) * 20
+        let ballPoints =
+          parseInt(bowlingStats?.Wickets) * 25
+            ? parseInt(bowlingStats?.Wickets) * 25
             : 0;
+        points = points + batPoints + ballPoints;
+        pointsList.push(batPoints + ballPoints)
       });
       mem.score = points;
+      mem.allScore = points;
+      pointsList.sort((a, b) => b - a)
+      pointsList.length = 15
+      mem.score = pointsList.reduce((acc, curr) => {
+        return acc + curr
+      }, 0)
     });
     this.members.sort((a, b) => b.score - a.score);
     this.statService.setPoints(this.members);
-    console.log(this.members);
+    // console.log(this.members);
   }
 }
 
 interface members {
   name: string;
   score: number;
+  allScore: number;
 }

@@ -4,14 +4,15 @@
   <div class="card-body">
     <div class="row">
       <div class="col-md-6 col-lg-4" *ngFor="let member of members; let i = index">
-        <div class="card mb-4 box-shadow dashboard-member-card" [routerLink]="['/profile', member?.name]">
+        <div class="card mb-4 box-shadow dashboard-member-card" [routerLink]="['/', year, 'profile', member?.name]">
           <div class="card-header dashboard-member-card-header">
             <h4 class="my-0 font-weight-normal">Rank {{i+1}}</h4>
           </div>
           <div class="card-body">
             <h1 class="card-title pricing-card-title dashboard-member-name">{{member?.name}}</h1>
             <ul class="list-unstyled mt-3 mb-4">
-              <li class="dashboard-member-score">{{member?.score}} points</li>
+              <li class="dashboard-member-score">Total : {{member?.allScore}} points</li>
+              <li class="dashboard-member-score">Top 15 : {{member?.score}} points</li>
             </ul>
           </div>
         </div>

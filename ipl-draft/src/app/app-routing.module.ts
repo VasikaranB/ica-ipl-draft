@@ -4,11 +4,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ProfileComponent } from './profile/profile.component';
+import { HomeScreenComponent } from './home-screen/home-screen.component';
 
 
 const routes: Routes = [
-  { path: '', component: DashboardComponent },
-  { path: 'profile/:name', component: ProfileComponent },
+  { path: '', component: HomeScreenComponent},
+  { path: ':year/dashboard', component: DashboardComponent },
+  { path: ':year/profile/:name', component: ProfileComponent },
   { path: '**', component: PageNotFoundComponent }
 ];
 
