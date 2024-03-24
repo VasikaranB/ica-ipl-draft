@@ -142,7 +142,7 @@ export const masterData2024: MasterData = {
     'Marco Jansen',
     'Ruturaj Gaikwad',
     'Ayush Badoni',
-    'Naveen-ul-Haq',
+    'Naveen Ul Haq',
     'Jasprit Bumrah',
     'Sanju Samson',
     'Dhruv Jurel',
