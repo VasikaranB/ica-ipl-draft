@@ -50,7 +50,7 @@ export const masterData2024: MasterData = {
     'Chetan Sakariya',
     'Rahul Tewatia',
     'Spencer Johnson',
-    'T. Natarajan',
+    'T Natarajan',
     'MS Dhoni',
     'Ajinkya Rahane',
     'Maheesh Theekshana',
