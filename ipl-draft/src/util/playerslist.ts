@@ -33,7 +33,7 @@ export const masterData2024: MasterData = {
     'Noor Ahmad',
     'Heinrich Klaasen',
     'Pat Cummins',
-    'KL Rahul',
+    'K L Rahul',
     'Ishan Kishan',
     'Glenn Maxwell',
     'Sameer Rizvi',
