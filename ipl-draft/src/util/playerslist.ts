@@ -1,5 +1,5 @@
 export const masterData2024: MasterData = {
-  'Dinesh Khanna' : [
+  'Dinesh Kanna' : [
     'Rahul Chahar',
     'Harshal Patel',
     'Axar Patel',
@@ -155,7 +155,7 @@ export const masterData2024: MasterData = {
   ],
 }
 export const masterData2023: MasterData = {
-  'Dinesh Khanna': [
+  'Dinesh Kanna': [
     'K L Rahul',
     'Trent Boult',
     'Suryakumar Yadav',
