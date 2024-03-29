@@ -132,7 +132,7 @@ export const masterData2024: MasterData = {
     'Shahbaz Ahmed'
   ],
   'Vasikaran' : [
-    'Simran Singh',
+    'Prabhsimran Singh',
     'Chris Woakes',
     'Anrich Nortje',
     'Varun Chakaravarthy',
