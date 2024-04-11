@@ -126,7 +126,7 @@ export const masterData2024: MasterData = {
     'Faf Du Plessis',
     'Deepak Hooda',
     'Lockie Ferguson',
-    'Vijaykumar Vyshak',
+    'Vyshak Vijaykumar',
     'Yudhvir Singh',
     'Mayank Dagar',
     'Shahbaz Ahmed'
