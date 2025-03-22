@@ -1,23 +1,43 @@
 <div class="home-container">
-    <!-- Top Half: Image -->
-    <div class="top-half">
-      <img src="assets/home-wallpaper.jpeg" alt="Home Image" class="home-image">
-    </div>
-  
-    <!-- Bottom Half: Year Selection -->
-    <div class="bottom-header"><h2><b>Select the IPL edition ...</b></h2></div>
-    <div class="bottom-half">
-      <div class="year-options">
-        <div class="year-option" (click)="goToDashboard(2023)">
-          <img src="assets/year2023.jpg" alt="Year 2023" class="year-image" title="Go to 2023 Dashboard">
-          <span class="year-text">2023</span>
-        </div>
-        <div class="year-option" (click)="goToDashboard(2024)">
-            <img src="assets/year2024.jpg" alt="Year 2024" class="year-image" title="Go to 2024 Dashboard">
-            <span class="year-text">2024</span>
-          </div>
-        <!-- Add more year options as needed -->
+  <!-- Top Half: Image -->
+  <div class="top-half">
+    <img src="assets/home-wallpaper.jpeg" alt="Home Image" class="home-image" />
+  </div>
+
+  <!-- Bottom Half: Year Selection -->
+  <div class="bottom-header">
+    <h2><b>Select the IPL edition ...</b></h2>
+  </div>
+  <div class="bottom-half">
+    <div class="year-options">
+      <div class="year-option" (click)="goToDashboard(2023)">
+        <img
+          src="assets/year2023.jpg"
+          alt="Year 2023"
+          class="year-image"
+          title="Go to 2023 Dashboard"
+        />
+        <span class="year-text">2023</span>
       </div>
+      <div class="year-option" (click)="goToDashboard(2024)">
+        <img
+          src="assets/year2024.jpg"
+          alt="Year 2024"
+          class="year-image"
+          title="Go to 2024 Dashboard"
+        />
+        <span class="year-text">2024</span>
+      </div>
+      <div class="year-option" (click)="goToDashboard(2025)">
+        <img
+          src="assets/year2025.jpg"
+          alt="Year 2025"
+          class="year-image"
+          title="Go to 2025 Dashboard"
+        />
+        <span class="year-text">2025</span>
+      </div>
+      <!-- Add more year options as needed -->
     </div>
   </div>
-  
+</div>

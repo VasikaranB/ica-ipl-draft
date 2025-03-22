@@ -1,5 +1,5 @@
 export const masterData2024: MasterData = {
-  'Dinesh Kanna' : [
+  'Dinesh Kanna': [
     'Rahul Chahar',
     'Harshal Patel',
     'Axar Patel',
@@ -19,9 +19,9 @@ export const masterData2024: MasterData = {
     'Akash Madhwal',
     'Prasidh Krishna',
     'Anuj Rawat',
-    'Umesh Yadav'
+    'Umesh Yadav',
   ],
-  'Kiren' : [
+  Kiren: [
     'Shikhar Dhawan',
     'Nathan Ellis',
     'Mitchell Marsh',
@@ -41,9 +41,9 @@ export const masterData2024: MasterData = {
     'Harshit Rana',
     'Travis Head',
     'Nuwan Thushara',
-    'Rovman Powell'
+    'Rovman Powell',
   ],
-  'Yeshwant' : [
+  Yeshwant: [
     'Liam Livingstone',
     'Harpreet Brar',
     'Rishabh Pant',
@@ -63,9 +63,9 @@ export const masterData2024: MasterData = {
     'Ramandeep Singh',
     'Kane Williamson',
     'Vijay Shankar',
-    'Daryl Mitchell'
+    'Daryl Mitchell',
   ],
-  'Shashank' : [
+  Shashank: [
     'Arshdeep Singh',
     'Rinku Singh',
     'Shreyas Iyer',
@@ -85,9 +85,9 @@ export const masterData2024: MasterData = {
     'Trent Boult',
     'Nandre Burger',
     'Akash Deep',
-    'Yash Dayal'
+    'Yash Dayal',
   ],
-  'Roshan + Naveen' : [
+  'Roshan + Naveen': [
     'Sam Curran',
     'Kagiso Rabada',
     'Prithvi Shaw',
@@ -107,9 +107,9 @@ export const masterData2024: MasterData = {
     'Avesh Khan',
     'Adam Zampa',
     'Alzarri Joseph',
-    'Karn Sharma'
+    'Karn Sharma',
   ],
-  'Sujeeth + Siddharth' : [
+  'Sujeeth + Siddharth': [
     'Jitesh Sharma',
     'Jonny Bairstow',
     'Rilee Rossouw',
@@ -129,9 +129,9 @@ export const masterData2024: MasterData = {
     'Vyshak Vijaykumar',
     'Yudhvir Singh',
     'Mayank Dagar',
-    'Shahbaz Ahmed'
+    'Shahbaz Ahmed',
   ],
-  'Vasikaran' : [
+  Vasikaran: [
     'Prabhsimran Singh',
     'Chris Woakes',
     'Anrich Nortje',
@@ -151,9 +151,9 @@ export const masterData2024: MasterData = {
     'Mujeeb Ur Rahman',
     'Matthew Wade',
     'Umran Malik',
-    'Mohsin Khan'
+    'Mohsin Khan',
   ],
-}
+};
 export const masterData2023: MasterData = {
   'Dinesh Kanna': [
     'K L Rahul',
@@ -305,6 +305,145 @@ export const masterData2023: MasterData = {
     'Adil Rashid',
     'Rovman Powell',
     'Ajinkya Rahane',
+  ],
+};
+
+export const masterData2025: MasterData = {
+  Dinesh: [
+    'Ravindra Jadeja',
+    'Matheesha Pathirana',
+    'T. Natarajan',
+    'KL Rahul',
+    'Sunil Narine',
+    'Shubman Gill',
+    'Pat Cummins',
+    'Nitish Kumar Reddy',
+    'Jasprit Bumrah',
+    'Ryan Rickelton',
+    'Angkrish Raghuvanshi',
+    'Sherfane Rutherford',
+    'Glenn Phillips',
+    'Ashutosh Sharma',
+    'Anrich Nortje',
+  ],
+  Kiren: [
+    'Devon Conway',
+    'Sam Curran',
+    'Rachin Ravindra',
+    'Mukesh Kumar',
+    'Mitchell Starc',
+    'Tristan Stubbs',
+    'Rishabh Pant',
+    'Mitchell Marsh',
+    'Nicholas Pooran',
+    'Marco Jansen',
+    'Kagiso Rabada',
+    'Rahul Chahar',
+    'Abhishek Sharma',
+    'Wanindu Hasaranga',
+    'Abishek Porel',
+  ],
+  Shashank: [
+    'Ruturaj Gaikwad',
+    'Ajinkya Rahane',
+    'Mayank Yadav',
+    'Josh Inglis',
+    'Nehal Wadhera',
+    'Travis Head',
+    'Deepak Chahar',
+    'Will Jacks',
+    'N. Tilak Varma',
+    'Jofra Archer',
+    'Liam Livingstone',
+    'Phil Salt',
+    'Vyshak Vijaykumar+',
+    'Azmatullah Omarzai',
+    'Washington Sundar',
+  ],
+  'Naveen + Sujeeth': [
+    'Ravichandran Ashwin',
+    'Faf du Plessis',
+    'Jake Fraser-McGurk',
+    'Rahmanullah Gurbaz',
+    'Andre Russell',
+    'Ravi Bishnoi',
+    'Prabhsimran Singh',
+    'Trent Boult',
+    'Naman Dhir',
+    'Riyan Parag',
+    'Maheesh Theekshana',
+    'Virat Kohli',
+    'Harpreet Brar',
+    'Glenn Maxwell',
+    'Mahipal Lomror',
+  ],
+  Roshan: [
+    'Shivam Dube',
+    'Quinton de Kock',
+    'Rinku Singh',
+    'Yuzvendra Chahal',
+    'Rashid Khan',
+    'Harshal Patel',
+    'Mitchell Santner',
+    'Rohit Sharma',
+    'Yashasvi Jaiswal',
+    'Rajat Patidar',
+    'Yash Dayal',
+    'Bhuvneshwar Kumar',
+    'Avesh Khan',
+    'Ayush Badoni',
+    'Mohsin Khan',
+  ],
+  'Yeshwant + Anand': [
+    'Noor Ahmad',
+    'Nathan Ellis',
+    'Axar Patel',
+    'Varun Chakaravarthy',
+    'Jos Buttler',
+    'Heinrich Klaasen',
+    'Hardik Pandya',
+    'Shubham Dubey',
+    'Shimron Hetmyer',
+    'Akash Madhwal',
+    'Nitish Rana',
+    'Rasikh Dar',
+    'Tim David',
+    'Suyash Sharma',
+    'David Miller',
+  ],
+  Vasikaran: [
+    'Rahul Tripathi',
+    'Harshit Rana',
+    'Aiden Markram',
+    'Shreyas Iyer',
+    'Arshdeep Singh',
+    'Shashank Singh',
+    'Mohammed Siraj',
+    'Suryakumar Yadav',
+    'Dhruv Jurel',
+    'Josh Hazlewood',
+    'Krunal Pandya',
+    'Jitesh Sharma',
+    'Chetan Sakariya',
+    'Abhinav Manohar',
+    'Prasidh Krishna',
+  ],
+  Siddharth: [
+    'Khaleel Ahmed',
+    'MS Dhoni',
+    'Deepak Hooda',
+    'Mohit Sharma',
+    'Kuldeep Yadav',
+    'Venkatesh Iyer',
+    'Ramandeep Singh',
+    'Marcus Stoinis',
+    'Sai Sudharsan',
+    'Ishan Kishan',
+    'Mohammed Shami',
+    'Sanju Samson',
+    'Sandeep Sharma',
+    'Devdutt Padikkal',
+    'Romario Shepherd',
   ],
 };
 

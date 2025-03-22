@@ -1,56 +1,69 @@
 /* Header */
 h1 {
-    font-size: 2.5rem;
-    text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 3rem;
-  }
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
 
-  .card-header {
-    background-color: #302a2a;
-  }
-  
-  /* Profile Points Card */
-  .card-header h4 {
-    font-weight: bold;
-    font-size: 1.5rem;
-    color: #53d633;
-  }
-  
-  .card-body h1 {
-    font-size: 4rem;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 1rem;
-  }
-  
-  /* Players List Card */
-  .card-header h4 {
-    font-weight: bold;
-    font-size: 1.5rem;
-  }
-  
-  .card-body ul li {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .card-body ul li:first-child {
-    margin-top: 0.5rem;
-  }
-  
-  .playerImage {
-    height: 200px;
-    width:200px
-  }
+.profile-div {
+  background-color: #241e1e;
+}
 
-  .batImage {
-    height: 30px;
-    width:30px
-  }
+.card-header {
+  background-color: #241e1e;
+}
 
-  .pricing-card-title {
-    display: flex;
-    justify-content: center;
-    font-weight: 700;
-  }
+/* Profile Points Card */
+.card-header h4 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #35fc1b;
+}
+
+.player-details h4 {
+  color: #f4f5ea;
+}
+
+.card-body {
+  background-color: #241e1e;
+  color: #f4f5ea;
+}
+
+.card-body h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* Players List Card */
+.card-header h4 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.card-body ul li {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.card-body ul li:first-child {
+  margin-top: 0.5rem;
+}
+
+.playerImage {
+  height: 200px;
+  width: 200px;
+}
+
+.batImage {
+  height: 30px;
+  width: 30px;
+}
+
+.pricing-card-title {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+}

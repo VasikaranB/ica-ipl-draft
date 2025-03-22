@@ -3,8 +3,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #000000; 
-  color: #53d633;
+  background-color: 	#2d2d30; 
+  color: 	#f4f5ea;
 }
 
 .logo {
@@ -25,22 +25,22 @@ ul {
 
 a {
   display: block;
-  color: white;
+  color:#f4f5ea;
   text-decoration: none;
   padding: 10px 15px;
   border-radius: 5px;
-  background-color: #333022;
+  background-color: #443350;
 }
 
 a:hover {
-  background-color:   rgb(104, 68, 68);
-  color: #80ad98;
+  background-color:   rgb(189, 190, 196);
+  color: #323835;
 }
 
 
   footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #2d2d30;
+    color: #f4f5ea;
     text-align: right;
     padding: 6px;
     position: fixed;

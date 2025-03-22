@@ -1,18 +1,18 @@
 .dashboard-card {
-    border-radius: 10px;
+    border-radius: 0px;
     border: none;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+    background-color: #241e1e;
     padding: 20px;
   }
 
   .dashboard-member-card:hover {
-    background-color: rgb(190, 202, 202);
+    background-color: rgb(49, 54, 54);
   }
   
   .dashboard-card-header {
     background-color:#000504;
-    color: #53d633;
+    color: #f4f5ea;
     border-radius: 5px 5px 0px 0px;
     font-weight: bold;
     font-size: 24px;
@@ -23,28 +23,29 @@
     border-radius: 10px;
     border: none;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    background-color: #f7f7f7;
+    background-color: #241e1e;
     padding: 20px;
     height: 100%;
   }
   
   .dashboard-member-card-header {
-    background-color: #f7f7f7;
+    background-color: #0f0f0f;
     border-radius: 5px 5px 0px 0px;
     font-weight: bold;
     font-size: 18px;
     padding: 10px;
+    color: #f4f5ea;
   }
   
   .dashboard-member-name {
     font-size: 32px;
     font-weight: bold;
-    color: #000000;
+    color: #35fc1b;
   }
   
   .dashboard-member-score {
     font-size: 18px;
     font-weight: bold;
-    color: #1a1818;
+    color: #f4f5ea;
   }
   

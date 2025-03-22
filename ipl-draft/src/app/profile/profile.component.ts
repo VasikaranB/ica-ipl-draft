@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { masterData2023, masterData2024 } from '../../util/playerslist';
 import { StatsService } from '../stats.service';
 import { ActivatedRoute, Router } from '@angular/router';
+import { getMasterData } from 'src/util/app.utils';
 
 @Component({
   selector: 'app-profile',
@@ -14,8 +15,8 @@ export class ProfileComponent implements OnInit {
     private statService: StatsService,
     private router: Router
   ) {}
-  year = this.route.snapshot.paramMap.get('year') || '2024';
-  masterData = this.year =='2023' ? masterData2023: masterData2024;
+  year = this.route.snapshot.paramMap.get('year') || '2025';
+  masterData = getMasterData(this.year);;
   names = Object.keys(this.masterData);
   playerList: string[] = [];
   profilePoints = 0

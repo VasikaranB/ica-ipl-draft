@@ -1,9 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { masterData2023, masterData2024 } from '../../util/playerslist';
+import {
+  masterData2023,
+  masterData2024,
+  masterData2025,
+} from '../../util/playerslist';
 import { StatsService } from '../stats.service';
 import { LoaderService } from '../loader.service';
 import { ActivatedRoute } from '@angular/router';
+import { getId, getMasterData } from 'src/util/app.utils';
 
 @Component({
   selector: 'app-dashboard',
@@ -15,20 +20,20 @@ export class DashboardComponent implements OnInit {
     private http: HttpClient,
     private statService: StatsService,
     private loaderService: LoaderService,
-    private route: ActivatedRoute,
+    private route: ActivatedRoute
   ) {}
 
   battersData: any;
   bowlersData: any;
   members: members[] = [];
-  year: string = this.route.snapshot.paramMap.get('year') || '2024';;
-  masterData = this.year =='2023' ? masterData2023: masterData2024;
+  year: string = this.route.snapshot.paramMap.get('year') || '2025';
+  masterData = getMasterData(this.year);
 
   ngOnInit() {
-    const yearID = this.getId(this.year)
+    const yearID = getId(this.year);
     let names = Object.keys(this.masterData);
     names.forEach((value: string) => {
-      this.members.push({ name: value, score: 0 , allScore : 0});
+      this.members.push({ name: value, score: 0, allScore: 0 });
     });
     this.loaderService.isLoading.next(true);
     this.http
@@ -70,17 +75,6 @@ export class DashboardComponent implements OnInit {
     return data;
   }
 
-  getId(year: string ) {
-    switch(year) {
-      case '2023':
-        return 107;
-      case '2024':
-        return 148;
-      default:
-        return 148;
-    }
-  }
-
   filterBowlerData(data: any[]) {
     return data.map((bowler: any) => {
       return { BowlerName: bowler?.BowlerName, Wickets: bowler?.Wickets };
@@ -113,15 +107,15 @@ export class DashboardComponent implements OnInit {
             ? parseInt(bowlingStats?.Wickets) * 25
             : 0;
         points = points + batPoints + ballPoints;
-        pointsList.push(batPoints + ballPoints)
+        pointsList.push(batPoints + ballPoints);
       });
       mem.score = points;
       mem.allScore = points;
-      pointsList.sort((a, b) => b - a)
-      pointsList.length = 15
+      pointsList.sort((a, b) => b - a);
+      pointsList.length = 15;
       mem.score = pointsList.reduce((acc, curr) => {
-        return acc + curr
-      }, 0)
+        return acc + curr;
+      }, 0);
     });
     this.members.sort((a, b) => b.score - a.score);
     this.statService.setPoints(this.members);
