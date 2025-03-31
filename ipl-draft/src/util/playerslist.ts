@@ -313,7 +313,7 @@ export const masterData2025: MasterData = {
     'Ravindra Jadeja',
     'Matheesha Pathirana',
     'T Natarajan',
-    'KL Rahul',
+    'K L Rahul',
     'Sunil Narine',
     'Shubman Gill',
     'Pat Cummins',
