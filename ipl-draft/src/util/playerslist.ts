@@ -439,7 +439,7 @@ export const masterData2025: MasterData = {
     'Marcus Stoinis',
     'Sai Sudharsan',
     'Ishan Kishan',
-    'Mohammed Shami',
+    'Mohammad Shami',
     'Sanju Samson',
     'Sandeep Sharma',
     'Devdutt Padikkal',
